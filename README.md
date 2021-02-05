@@ -40,6 +40,8 @@ The code is created to conduct a comparative study among several classification 
 
 **Balancing** - 
 
+# Development Setup
+
 # Usage
 
 # Results

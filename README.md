@@ -65,6 +65,39 @@ Activities regarding the definition of balance of the target output of data. Sam
 
 # Development Setup
 
+The project was created based on Anaconda environment. The following libraries are necessary in order to run the codes:
+- re
+- numpy
+- pandas
+- seaborn
+- matplotlib.pyplot
+- scikit-learn
+
+All libraries are already installed in Anaconda environment default installation. For more information about how to install Anaconda environment please refer to its [documentation](https://www.anaconda.com/products/individual).
+
 # Usage
 
+The codes are divided by dataset, as follows:
+
+## Preprocessing
+
+The preprocessing steps necessary to implement the machine learning models.
+
+- bsil19151608-DMML1_P_Prep_Dataset_1.ipynb - [Adult Data Set](http://archive.ics.uci.edu/ml/datasets/Adult)
+- bsil19151608-DMML1_P_Prep_Dataset_2.ipynb - [Online News Popularity Dataset](http://archive.ics.uci.edu/ml/datasets/Online+News+Popularity)
+- bsil19151608-DMML1_P_Prep_Dataset_3.ipynb - [Hotel Booking Demand Dataset](https://www.kaggle.com/jessemostipak/hotel-booking-demand)
+
+## Model's application
+
+The application of the machine learning models as well as its evaluation using accuracy metric and confusion matrix.
+
+- bsil19151608-DMML1_P_Model_Dataset_1.ipynb - [Adult Data Set](http://archive.ics.uci.edu/ml/datasets/Adult)
+- bsil19151608-DMML1_P_Model_Dataset_2.ipynb - [Online News Popularity Dataset](http://archive.ics.uci.edu/ml/datasets/Online+News+Popularity)
+- bsil19151608-DMML1_P_Model_Dataset_3.ipynb - [Hotel Booking Demand Dataset](https://www.kaggle.com/jessemostipak/hotel-booking-demand)
+
 # Results
+
+All models were applied considering the same procedure and using default parameters setting to avoid any errors in interpretation of the results phase. After the model's application, the results were ranked based on the Accuracy score, a common approach in the data science field. By collecting the two best Accuracy results, we break down the models by using the Confusion Matrix method to check if the model does not show any inconsistencies such as higher occurrence of false negatives instead of false positives.
+The following diagram shows an example of the Confusion Matrix evaluation technique:
+
+![](/Figures/adult_confusion_matrix.png) 

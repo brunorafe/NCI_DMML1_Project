@@ -28,17 +28,40 @@ The code is created to conduct a comparative study among several classification 
 
 # Preprocessing
 
-**Null and Missing Values** - 
+The following data mining steps were conducted in order to make all data sources ready for model's application:
 
-**Refactoring** -
+## Null and Missing Values 
 
-**Feature Selection** - 
+All data sources were checked for missing and null values. The analysis was made considering the following assumptions:
+- Is the missing data related to the outcome (informative missingness)? 
+- Is the percentage of missing data substantial enough to remove the predictor?
+- Is the missing data concentraded on specific samples?
+- Is it possible to use the training data to estimate the missing values?
 
-**One-Hot Enconding** - 
+## Feature Engineering
 
-**Collinearity and Multicollinearity** - 
+Activities regarding the selection and creation of relevant attributes which contribute most to the predicted outputs. In order to make the observations easy to understand by the models. A featuring engineering analysis was conducted in all the categorical predictors to check if it was required to reduce the number of classes (categories) on those predictors.
 
-**Balancing** - 
+## Feature Selection 
+
+One of the primary reasons to measure the strength or relevance of the predictors is to filter which should be used as inputs in a model. This supervised feature selection can be data driven based on the existing data. The results of the filtering process can be a critical step in creating an effective model.
+
+## One-Hot Encoding 
+
+Some machine learning models required that all predictors must be of numerical type. One-Hot Encoding is the process of translate categorical predictors into a computer-based
+format.
+
+## Collinearity and Multicollinearity 
+
+Collinearity is the technical term for the situation where a pair of predictors variables have a substantial correlation with each other. Multicollinearity is when multiple predictors have relationships at the same time. Another way of eliminating redundant predictors as well as irrelevant ones is to select a subset of predictors that have little intercorrelation between its features, especially in classifier algorithms.
+
+## Balancing 
+
+Activities regarding the definition of balance of the target output of data. Sampling techniques such as downsampling and oversampling are also presented in this step, as shown on the following diagrams:
+
+|![](/Figures/adult_balance_binary.png)     | ![](/Figures/adult_balance_binary_new.png)          |
+|-------------------------------------------|-----------------------------------------------------|
+| Adult Data Set without Sampling technique | Adult Data Set after downsampling technique applied |
 
 # Development Setup
 
